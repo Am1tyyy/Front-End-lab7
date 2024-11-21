@@ -1,0 +1,111 @@
+.App {
+  text-align: center;
+}
+/* Стиль для картки товару */
+.goods-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Ефект підйому та зміни кольору фону при наведенні */
+.goods-card:hover {
+  transform: translateY(-10px);  /* Підйом картки */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);  /* Тінь */
+  background-color: #f7f7f7;  /* Зміна фону */
+}
+
+/* Плавне збільшення картинки при наведенні */
+.goods-card img:hover {
+  transform: scale(1.05); /* Легке збільшення картинки */
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* Додано фон та стилі для App */
+.App {
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f0f5;
+  padding: 20px;
+  min-height: 100vh;
+}
+/* Фон та базові стилі */
+.App {
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f0f5;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+/* Контейнер сітки для товарів */
+.goods-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 колонки */
+  gap: 20px; /* Відстань між елементами */
+  justify-items: center; /* Вирівнювання карток по центру */
+  margin: 20px auto;
+  max-width: 800px; /* Обмеження ширини для гарного вигляду */
+}
+
+@media (max-width: 768px) {
+  .goods-grid {
+      grid-template-columns: repeat(2, 1fr); /* 2 колонки на малих екранах */
+  }
+}
+
+@media (max-width: 480px) {
+  .goods-grid {
+      grid-template-columns: 1fr; /* 1 колонка на дуже малих екранах */
+  }
+}
+/* Фон та базові стилі */
+.App {
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f0f5;
+  padding: 20px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center; /* Вертикальне центрування */
+  justify-content: center; /* Горизонтальне центрування */
+}
+
+/* Контейнер для товарів */
+.goods-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 колонки */
+  gap: 20px; /* Відстань між елементами */
+  justify-items: center; /* Центрування карток в колонках */
+}

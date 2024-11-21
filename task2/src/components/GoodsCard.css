@@ -1,0 +1,47 @@
+/* Основний стиль картки товару */
+.goods-card {
+    border: 2px solid #e0e0e0;
+    padding: 20px;
+    text-align: center;
+    width: 250px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 15px; /* Згладжені кути */
+    background: linear-gradient(to bottom, #ffffff, #f9f9f9); /* Градієнт */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Ефекти при наведенні */
+.goods-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(to bottom, #f7f7f7, #ffffff);
+}
+
+/* Стиль для зображення */
+.goods-card__image {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    margin-bottom: 15px;
+    border-radius: 8px; /* Згладжені кути для зображення */
+    transition: transform 0.3s ease;
+}
+
+.goods-card__image:hover {
+    transform: scale(1.1); /* Легке збільшення при наведенні */
+}
+
+/* Назва товару */
+.goods-card__name {
+    color: #333;
+    font-size: 18px;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+/* Вартість */
+.goods-card__cost {
+    font-size: 16px;
+    color: #666;
+}
